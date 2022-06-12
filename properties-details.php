@@ -51,12 +51,16 @@
                     </button>
                     <div class="navbar-collapse collapse w-100" id="navbar">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link dropdown-toggle" href="index.php">Home</a>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="index.php">Home</a>
                             </li>
                             
-                            <li class="nav-item dropdown megamenu-li">
-                                <a class="nav-link dropdown-toggle" href="about.php">About</a>
+                            <li class="nav-item  megamenu-li">
+                                <a class="nav-link" href="about.php">About</a>
+                            </li>
+                            
+                            <li class="nav-item  megamenu-li">
+                                <a class="nav-link" href="realestate.php">Real Estates</a>
                             </li>
                             
                             <li class="nav-item dropdown">
@@ -94,14 +98,17 @@
 <?php include'include/config.php';
    
 //<!--Header part_-->
-//include('include/header.php');
+//include('include/header.php');  this resused to work so the long way it is
 
 extract($_REQUEST);
+
 
 $id=$_REQUEST['id'];
 
 $query=mysqli_query($con,"select * from property where id='$id'");
 $res=mysqli_fetch_array($query);
+ 
+
 
 $id=$res['id'];
 $img=$res['image'];
@@ -124,6 +131,9 @@ $land_area=$res['land_area'];
 $sold=$res['sold'];
 $address=$res['address'];
 $map=$res['location'];
+$queryid=mysqli_query($con,"select * from realestate where property_owner_id='$id'");
+$res=mysqli_fetch_array($queryid);
+    $ownname=$res['name'];                
 
 
 ?>
@@ -172,7 +182,7 @@ $map=$res['location'];
 
 $query=mysqli_query($con,"select * from images where property_id='$id'");
 $res=mysqli_fetch_array($query);
-                    
+   
 $img1=$res['image1'];
 $img2=$res['image2'];
 $img3=$res['image3'];

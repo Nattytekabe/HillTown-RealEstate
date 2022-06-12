@@ -97,6 +97,29 @@ $image = $res['image'];     ?>
                         </ul>
 
                     </li>
+
+<li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">account_balance</i>
+                            <span>Real Estates</span>
+                        </a>
+                        <ul class="ml-menu">
+                                                        
+                     <li>
+                        <a href="feedback.php" >
+                            <i class="material-icons">list</i>
+                            <span>View Real Estates</span>
+                        </a>
+                    </li>                               
+                     <li>
+                        <a href="view_request.php" class="menu-toggle">
+                            <i class="material-icons">add</i>
+                            <span>Add a Real Estate</span>
+                        </a>
+                        
+                    </li>
+                </ul>
+            </li>
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">menu</i>

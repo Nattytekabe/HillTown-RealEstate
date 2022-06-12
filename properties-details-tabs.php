@@ -129,7 +129,7 @@
                                                 <strong>Parking:</strong> Yes
                                             </li>
                                             <li>
-                                                <strong>Property Owner:</strong> <?php echo $property_owner;?>
+                                                <strong>Property Owner:</strong> <?php echo $ownname;?>
                                             </li>
                                             
                                         </ul>

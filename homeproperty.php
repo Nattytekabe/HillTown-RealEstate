@@ -1,4 +1,159 @@
   <!-- Search area start -->
+<!-- Featured realestates start -->
+<div class="featured-properties content-area-19" id="section">
+    <div class="container">
+        <div class="main-title">
+            <h1>Featured Real Estates</h1>
+            <p>Our Most Rated Real Estate Parthners.</p>
+        </div>
+
+
+        <div class="row">
+
+               <?php 
+        include'include/config.php';
+  
+$query=mysqli_query($con,"select * from realestate where star > 4 ORDER BY RAND() LIMIT 4");
+
+while($res=mysqli_fetch_array($query))
+{
+$id=$res['property_owner_id'];
+$name=$res['name'];
+$img=$res['logo'];
+/*
+$imgquery=mysqli_query($con,"select * from images where property_id = '$id' ");
+$imgres=mysqli_fetch_array($imgquery);
+$img1=$imgres['image1'];
+*/
+        ?>    
+          
+  <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft delay-04s">
+                <div class="card property-box-2">
+                    <!-- property img -->
+                    <div class="property-thumbnail">
+                        <a href="properties-details.php?id=<?php echo $id;?>" class="property-img">
+                            
+                            <img src="admin/images/realestate_image/<?php echo $img;?>" alt="img-realestate" class="img-fluid">
+                        </a>
+                        <div class="property-overlay">
+                            <a href="realestate-properties.php?id=<?php echo $id;?>" class="overlay-link">
+                                <i class="fa fa-link"></i>
+                            </a>
+                            <a class="overlay-link property-video" href="http://google.com/?gws_rd=cr,ssl#q={$name}" target="_blank" title="View Details">
+                                <i class="fa fa-search"></i>
+                            </a>
+                          
+                        </div>
+                    </div>
+                    <!-- detail -->
+                    <div class="detail">
+                        <h5 class="title"><a href="realestate-properties.php?id=<?php echo $id;?>"><?php echo $res['name']  ?></a></h5>
+                        <h4 class="price">
+                            Rating <?php 
+                              echo $res['star'];
+                            if ($res['star'] <= 1 & $res['star'] >= 0) {
+                                
+                                ?>
+                               <i class="fa fa-star"></i>
+                                <?php
+                                } 
+                            else if ($res['star'] <= 1.5 & $res['star'] >= 1.1) {
+                                
+                                ?>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star-half-full"></i>
+                                <?php
+                                } 
+                            else if ($res['star'] <= 2 ) {
+                                
+                                ?>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                                <?php
+                                } 
+                            else if ($res['star'] <= 2.5 & $res['star'] >= 2.1) {
+                                
+                                ?>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star-half-full"></i>
+                                <?php
+                                } 
+
+                            else if ($res['star'] <= 3 ) {
+                                
+                                ?>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                                <?php
+                                } 
+                            else if ($res['star'] <= 3.5 & $res['star'] >= 3.1) {
+                                
+                                ?>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star-half-full"></i>
+                                <?php
+                                } 
+
+                            else if ($res['star'] <= 4 ) {
+                                
+                                ?>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                                <?php
+                                } 
+                            else if ($res['star'] <= 4.5 & $res['star'] >= 4.1) {
+                                
+                                ?>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star-half-full"></i>
+                                <?php
+                                } 
+                            else if ($res['star'] <= 4.9 & $res['star'] > 4.6) {
+                                
+                                ?>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star-half-full"></i>
+                                <?php
+                                } 
+
+                            else if ($res['star'] = 5 ) {
+                                
+                                ?>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                                <?php
+                                } 
+
+                            ?>    <!---- end of rating stars  ---->
+                        </h4>
+                        <p><?php echo $res['description']  ?>.</p>
+                    </div>
+                </div>
+            </div><?php //include 'properties-details-small.php'; ?>
+              <?php  } ?>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Featured realestates end -->
+
 
 <!-- Featured properties start -->
 <div class="featured-properties content-area-19" id="section">

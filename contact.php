@@ -44,7 +44,7 @@
 <!-- main header start -->
 <header class="main-header" id="main-header-2">
     <div class="container">
-        <div class="row">
+        <div class="row" style="background-blend-mode: multiply;">
             <div class="col-12">
                 <nav class="navbar navbar-expand-lg navbar-light rounded">
                     <a class="navbar-brand logo navbar-brand d-flex w-50 mr-auto" href="index.php">
@@ -56,14 +56,17 @@
                     </button>
                     <div class="navbar-collapse collapse w-100" id="navbar">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link dropdown-toggle" href="index.php">Home</a>
+                             <li class="nav-item ">
+                                <a class="nav-link" href="index.php">Home</a>
                             </li>
                             
-                            <li class="nav-item dropdown megamenu-li">
-                                <a class="nav-link dropdown-toggle" href="about.php">About</a>
+                            <li class="nav-item  megamenu-li">
+                                <a class="nav-link" href="about.php">About</a>
                             </li>
                             
+                            <li class="nav-item  megamenu-li">
+                                <a class="nav-link" href="realestate.php">Real Estates</a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="properties.php">Properties</a>
                                                          <div class="dropdown-menu">

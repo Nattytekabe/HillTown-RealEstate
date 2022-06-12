@@ -35,7 +35,7 @@
                                 </a>
                             </div>
                             <div id="collapse1" class="card-block collapse">
-                                <p>HillTown is a fully Ethiopian owned and managed company, has made tens of hundreds of Ethiopians and Ethiopian diasporas, at home and abroad, proud homeowners in their native country. Envisages to put roof over the heads of thousands more in the years ahead. In the previous years, Ayat®has handed over more than 7,000 residential homes, 1,000 commercial outlets and created job opportunities for more than 15,000 Ethiopians.</p>
+                                <p>HillTown Real Estate agency is an organised company working to create a connection between real estate and individual buyers in the brokerage industry. Our agency platform is structured with a network of real estate company websites in Ethiopia. We help local people, individuals or professionals, either they are agents, agencies or others, to easily and quickly buy and rent real estate standard properties.</p>
                             </div>
 
                             <div class="card-header">
@@ -44,7 +44,7 @@
                                 </a>
                             </div>
                             <div id="collapse2" class="card-block collapse">
-                                <p>To become a well-known, Africa wide Real Estate developer and a leading multi-disciplinary national company.</p>
+                                <p>We mark the real estate and brokerage industry with excellence by building an innovative and digital communication .</p>
                             </div>
 
                             <div class="card-header">
@@ -53,7 +53,7 @@
                                 </a>
                             </div>
                             <div id="collapse3" class="card-block collapse">
-                                <p>To create memorable real estate and lasting relationships with the goal of creating new, urbanist, walkable city with high quality of life, high design, beautiful architecture, and sense of place in culture-driven backdrop.</p>
+                                <p>TWe deliver the highest service quality with integrity and accountability to transform the brokerage service sector.</p>
                             </div>
 
                             <div class="card-header bd-none">
@@ -62,7 +62,7 @@
                                 </a>
                             </div>
                             <div id="collapse4" class="card-block collapse">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla dui. Pellentesque sed ante sed ligula hendrerit condimentum. Suspendisse rhoncus fringilla ipsum.</p>
+                                <p>Through our Platform, our users can use our visblity and network to reach more potential buyers or tenant real estate companies. Hilltown is affialted with any real estate company and act dependently to provide local customers the most elite services within reach.</p>
                             </div>
                         </div>
                     </div>
